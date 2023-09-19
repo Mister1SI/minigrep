@@ -9,7 +9,7 @@ fn main() {
         println!("Error parsing arguments: {err}");
         process::exit(1);
     });
-    println!("Searching in file \"{}\" for \"{}\"",  config.file_path, config.query);
+    //println!("Searching in file \"{}\" for \"{}\"",  config.file_path, config.query);
 
     if let Err(e) = minigrep::run(config) {
         println!("Application error: {e}");
